@@ -1,0 +1,46 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-segment>
+            <ion-segment-button>
+                <img src="assets/imgs/logo-bisnis-jabar.png" />
+            </ion-segment-button>
+        </ion-segment>
+
+    </ion-navbar>
+
+</ion-header>
+<ion-content class="bg2">
+
+
+
+<ion-slides>
+  <ion-slide>
+    <img src="{{item.post_image_content}}">
+  </ion-slide>
+</ion-slides>
+
+
+
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+        <ion-segment class="bg">
+            <ion-segment-button>
+                <ion-icon class="bg1" name="home"> </ion-icon>
+            </ion-segment-button>
+            <ion-segment-button>
+                <ion-icon class="bg1" name="heart"></ion-icon>
+            </ion-segment-button>
+            <ion-segment-button (click)="CommentPage()">
+                <ion-icon class="bg1" name="mail"></ion-icon>
+            </ion-segment-button>
+            <ion-segment-button (click)="shareSheetShare()">
+                <ion-icon class="bg1" ios="ios-share" name="md-share"></ion-icon>
+            </ion-segment-button>
+        </ion-segment>
+    </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,97 @@
+page-profil {
+    ion-fab[bottom] {
+        bottom: 50px;
+    }
+    .bg {
+        background-color: #488aff;
+    }
+    .segment-ios .segment-button {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        width: 0;
+        height: 3.2rem;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #488aff;
+        font-size: 1.3rem;
+        line-height: 3rem;
+        color: white;
+        background-color: transparent;
+    }
+    .container {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+    .bottom-left {
+        position: absolute;
+        bottom: 8px;
+        left: 2px;
+        color:white;
+        font-size:15px;
+        font-color: white;
+    }
+    .about-header {
+        background-color: #6495ED;
+        padding: 16px;
+        width: 100%;
+        min-height: 150px;
+        text-align: center;
+    }
+    .about-header img {
+        max-width: 200px;
+        min-height: 115px;
+        margin-left: -15px;
+        padding: 25px 0 20px 0;
+    }
+    .about-info p {
+        color: #697072;
+        text-align: left;
+    }
+    .about-info ion-icon {
+        color: color($colors, primary);
+        width: 20px;
+    }
+    .bulat {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100em;
+        opacity: 0.5;
+        border: 2px solid #ddd;
+        width: 160px;
+        height: 160px;
+        background-color: white;
+    }
+    .md,
+    .wp {
+        .about-info [text-right] {
+            margin-right: 0;
+        }
+    }
+    .buttoncss {
+        color: #e74c3c;
+    }
+    .alertcss {
+        color: #e74c3c;
+    }
+    .ios .about-info {
+        text-align: center;
+    }
+    .ios .about-info ion-icon {
+        width: auto;
+        margin-right: 10px;
+    }
+    .bg1 {
+    color: white;
+}
+.alertDanger{
+    background-color: white;
+    color: red;
+    button{
+        color: red;
+    }
+}
+}

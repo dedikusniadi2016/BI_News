@@ -1,0 +1,70 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-segment>
+            <ion-segment-button value="all">
+                <img src="assets/imgs/logo-bisnis-jabar.png" />
+            </ion-segment-button>
+        </ion-segment>
+
+        <ion-buttons end>
+            <button ion-button icon-only>
+        <ion-icon ios="ios-options-outline" md="md-options"></ion-icon>
+      </button>
+        </ion-buttons>
+    </ion-navbar>
+
+</ion-header>
+
+
+
+<ion-content>
+
+    <ion-card *ngFor="let c of countries" (click)="openNavDetailsPage(c)">
+        <ion-thumbnail item-left>
+            <img src="{{c.post_image_content}}">
+        </ion-thumbnail>
+        <h2 [innerText]="c.post_title"></h2>
+
+    <ion-grid>
+            <ion-row>
+                <ion-col>
+                    <ion-icon name="thumbs-up"></ion-icon>
+                </ion-col>
+                <ion-col>
+                    <ion-icon name="thumbs-down"></ion-icon>
+                </ion-col>
+                <ion-col>
+                    <ion-icon name="heart"></ion-icon>
+                </ion-col>
+                <ion-col (click)="shareSheetShare()">
+                    <ion-icon ios="ios-share" md="md-share"></ion-icon>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+
+    </ion-card>
+
+</ion-content>
+
+
+<ion-footer>
+    <ion-toolbar>
+        <ion-segment class="bg">
+            <ion-segment-button (click)="HomePage()">
+                <ion-icon class="bg1" name="home"> </ion-icon>
+            </ion-segment-button>
+            <ion-segment-button (click)="VideoPage()">
+                <ion-icon class="bg1" name="logo-youtube"></ion-icon>
+            </ion-segment-button>
+            <ion-segment-button (click)="FotoPage()">
+                <ion-icon class="bg1" name="images"></ion-icon>
+            </ion-segment-button>
+            <ion-segment-button (click)="ProfilPage()">
+                <ion-icon class="bg1" name="contact"></ion-icon>
+            </ion-segment-button>
+        </ion-segment>
+    </ion-toolbar>
+</ion-footer>

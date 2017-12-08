@@ -1,0 +1,36 @@
+page-foto {
+    ion-fab[bottom] {
+        bottom: 50px;
+    }
+    .bg {
+        background-color: #488aff
+    }
+    .segment-ios .segment-button {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        width: 0;
+        height: 3.2rem;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #488aff;
+        font-size: 1.3rem;
+        line-height: 3rem;
+        color: white;
+        background-color: transparent;
+    }
+    .bg1 {
+        color: white;
+    }
+
+    .like {
+        width:32px;
+        height:32px;
+    }
+    .likes {
+        width:43px;
+        height:34px;
+    }
+
+}

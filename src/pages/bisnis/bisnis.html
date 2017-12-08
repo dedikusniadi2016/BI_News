@@ -1,0 +1,65 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-segment>
+            <ion-segment-button value="all">
+                <img src="assets/imgs/logo-bisnis-jabar.png" />
+            </ion-segment-button>
+        </ion-segment>
+
+        <ion-buttons end>
+            <button ion-button icon-only>
+        <ion-icon ios="ios-options-outline" md="md-options"></ion-icon>
+      </button>
+        </ion-buttons>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+<ion-card *ngFor="let c of countries1" (click)="openNavDetailsPage(c)">
+        <div class="container">
+        <ion-thumbnail item-left>
+            <img class="img" src="{{c.post_image_content}}">
+        </ion-thumbnail>
+        <div class="bottom-left"> 
+         <h2 [innerText]="c.post_title"></h2>  </div>
+        </div>
+        
+    </ion-card>
+
+ <ion-toolbar no-border-top color="primary">
+<div class="center"> Bisnis </div>
+  </ion-toolbar>
+
+    <ion-item text-wrap *ngFor="let c of countries" (click)="openNavDetailsPage(c)">
+        <ion-thumbnail item-left>
+            <img src="{{c.post_image_thumb}}">
+        </ion-thumbnail>
+        <h2 [innerText]="c.post_title"></h2>
+         <div class="font">  {{c.tanggal}}  {{c.post_date}} </div>
+    </ion-item>
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+        <ion-segment class="bg">
+            <ion-segment-button (click)="HomePage()">
+                <ion-icon class="bg1" name="home"> </ion-icon>
+            </ion-segment-button>
+            <ion-segment-button (click)="VideoPage()">
+                <ion-icon class="bg1" name="logo-youtube"></ion-icon>
+            </ion-segment-button>
+            <ion-segment-button (click)="FotoPage()">
+                <ion-icon class="bg1" name="images"></ion-icon>
+            </ion-segment-button>
+            <ion-segment-button (click)="ProfilPage()">
+                <ion-icon class="bg1" name="contact"></ion-icon>
+            </ion-segment-button>
+        </ion-segment>
+    </ion-toolbar>
+</ion-footer>
